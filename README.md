@@ -2,7 +2,10 @@
 # My React App
 
 This is a React application hosted on GitHub Pages.
-Check GitHub Page here: [ https://jgello.github.io/React-Pages/ ]
+Check GitHub Page here:
+ ```
+https://jgello.github.io/React-Pages/ 
+```
 
 ## Deployment
 
