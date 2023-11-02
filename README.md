@@ -1,5 +1,3 @@
-Certainly! Below is an example of a `README.md` file for a React app hosted on GitHub Pages, including instructions on how to deploy the app and the website link:
-
 ```markdown
 # My React App
 
