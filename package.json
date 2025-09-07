@@ -2,20 +2,31 @@
   "name": "testinghub",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://JGELLO.github.io/React-Development/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^18.2.51",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
+    "react-slick": "^0.29.0",
+    "react-spring": "^9.7.3",
+    "react-use": "^17.4.0",
+    "slick-carousel": "^1.8.1",
+    "three": "^0.158.0",
+    "typed.js": "^2.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,6 +47,9 @@
     ]
   },
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "-": "^0.0.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.3.0",
+    "typescript": "^3.2.1"
   }
 }

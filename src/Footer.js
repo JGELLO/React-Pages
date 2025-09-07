@@ -12,7 +12,8 @@ const Footer = () => {
 
   return (
     <footer style={footerStyle}>
-      <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+      <p>&copy; 2023 JGELLO. All Rights Reserved.</p>
+      <p>React Icon Resources: https://react-icons.github.io/react-icons/</p>
     </footer>
   );
 };

@@ -1,69 +1,65 @@
-```markdown
-# My React App
+<div align="center">
+  <h1>My Portfolio - In development</h1>
 
-This is a React application hosted on GitHub Pages.
-Check GitHub Page here:
-```
-Check GitHub Page here: https://jgello.github.io/React-Pages/ 
-```
+## Overview
 
-## Deployment
+Welcome to my portfolio repository! This portfolio showcases my skills, projects, and experience as a developer. It has been built using React for the front-end and Node.js with npm for the back-end setup. This README will guide you through the process of setting up and running the portfolio locally on your machine.
 
-Follow these steps to deploy the app on GitHub Pages:
+## Prerequisites
 
-1. **Create a GitHub Repository:**
-   - Create a new repository on GitHub for your project if you haven't already.
+Before you begin, ensure you have the following software installed on your machine:
 
-2. **Clone the Repository:**
-   - Clone the repository to your local machine using the following command:
+- Node.js: Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
+
+## Installation
+
+Follow these steps to set up the portfolio project on your local machine:
+
+1. **Clone the repository:**
    ```
-   git clone https://github.com/username/repository.git
-   ```
-
-3. **Navigate to Your Project Directory:**
-   - Change your current directory to the project folder:
-   ```
-   cd repository
+   git clone https://github.com/your-username/portfolio.git
+   cd portfolio
    ```
 
-4. **Install Dependencies:**
-   - Install the necessary dependencies using npm (Node Package Manager):
+2. **Install dependencies:**
    ```
    npm install
    ```
 
-5. **Build the React App:**
-   - Build the React app for production:
-   ```
-   npm run build
-   ```
-
-6. **Deploy to GitHub Pages:**
-   - Deploy the app to GitHub Pages using the following command:
-   ```
-   npm run deploy
-   ```
-
-7. **Access Your Deployed App:**
-   - Your React app is now deployed on GitHub Pages! Access it using the following link:
-   [Your GitHub Pages URL](https://username.github.io/repository)
-
-## Development
-
-If you want to run the app locally for development purposes, you can use the following command:
+3. **Start the development server:**
    ```
    npm start
    ```
-   This will start a development server, and you can access the app at `http://localhost:3000`.
 
-## Technologies Used
+The development server will start, and you can view the portfolio in your web browser by visiting `http://localhost:3000`.
 
-- React
-- HTML
-- CSS
-- JavaScript
+## Project Structure
 
-## Author
+The project structure is organized as follows:
 
-- Angelo
-- GitHub: [ https://github.com/JGELLO ]
+- `src/`: Contains the React application source code.
+- `server/`: Contains the Node.js server code.
+- `public/`: Contains static assets and the HTML entry point.
+- `package.json`: Defines project dependencies and scripts.
+- `README.md`: Project documentation.
+
+## Available Scripts
+
+In the project directory, you can run the following scripts:
+
+- `npm start`: Starts the development server for both React and Node.js.
+- `npm run build`: Builds the React app for production use.
+- `npm run server`: Starts the Node.js server independently.
+- `npm test`: Launches the test runner.
+- `npm run eject`: **Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+## Customize Your Portfolio
+
+Check the live Website here [ https://jgello.github.io/React-Pages/ ] do note some pages may or may not have been applied to this repo yet<br/>
+Feel free to customize the portfolio to make it your own. Update the content, add your projects, modify the styles, and personalize it to reflect your unique identity as a developer.
+
+## Support
+
+If you encounter any issues or have questions about this portfolio, please feel free to contact me at angeloalceracabaluna@gmail.com
+
+Thank you for checking out my portfolio! Happy coding!

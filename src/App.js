@@ -1,43 +1,69 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import Header from './Header';
+import LoadingScreen from './LoadingScreen'; // Replace this import with the actual path to your LoadingScreen component
+import Navigation from './Navigation';
 import About from './About';
 import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
 import Contact from './Contact';
-import Footer from './Footer'; // Import Footer component
+import Tools from './Tools';
+import Footer from './Footer';
+import ScrollToTopButton from './ScrollToTopButton';
 
-import profileImage from './profile.png'; // Import your image file
-
-const ProfileImage = () => {
-  return (
-    <div className="profile-image">
-      <img src={profileImage} alt="Profile" />
-    </div>
-  );
-};
-
+  
 const App = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false); // Define isDarkMode state
+ 
+  useEffect(() => {
+    // Simulate loading time
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   const toggleDarkMode = () => {
-    setDarkMode(!isDarkMode);
+    // Toggle dark mode state
+    setIsDarkMode(!isDarkMode);
+  };
+
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
-      <button className="theme-toggle" onClick={toggleDarkMode}>
-        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
-      <Header />
-      <ProfileImage /> {/* Add the image component */}
-      <About />
-      <Projects />
-      <Skills />
-      <Subskills />
-      <Contact />
-      <Footer /> {/* Include Footer component */}
+    <div>
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
+        <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
+          <button className="theme-toggle" onClick={toggleDarkMode}>
+            {/* Add dark mode icons here */}
+          </button>
+          <br></br>
+
+          <Navigation
+            isDarkMode={isDarkMode}
+            toggleDarkMode={toggleDarkMode}
+            isMobileMenuOpen={isMobileMenuOpen}
+            toggleMobileMenu={toggleMobileMenu}
+          />
+          <About />
+          <Skills />
+          <Subskills />
+          <Tools />
+          <Projects />
+          <Contact />
+          <Footer />
+          <ScrollToTopButton />
+          
+        </div>
+      )}
     </div>
   );
 };

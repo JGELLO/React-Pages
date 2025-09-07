@@ -1,15 +1,31 @@
 import React from 'react';
+import { } from 'react-icons/fa';
+import { SiAdobeaftereffects, SiAdobephotoshop, SiCanva } from "react-icons/si";
+
 
 const Subskills = () => {
   return (
     <section className="subskills">
       <h2>Subskills</h2>
       <ul>
-        <li><a href="https://www.example.com/html" target="_blank" rel="noopener noreferrer">HTML</a></li>
-        <li><a href="https://www.example.com/css" target="_blank" rel="noopener noreferrer">CSS</a></li>
-        <li><a href="https://www.example.com/javascript" target="_blank" rel="noopener noreferrer">JavaScript</a></li>
-        <li><a href="https://www.example.com/react" target="_blank" rel="noopener noreferrer">React</a></li>
-        {/* Add more skills with hyperlinks as needed */}
+
+        <h3>Photo/Video Editing Skills:</h3>
+
+          <li>
+
+            <SiAdobephotoshop size = "30" />
+            <SiCanva size = "30" />
+            <SiAdobeaftereffects size = "30" />
+
+          </li>
+
+        <br></br>
+
+        <h3>Misc. Skills</h3>
+
+          <li>Typing Proficiency</li> 
+       
+            
       </ul>
     </section>
   );

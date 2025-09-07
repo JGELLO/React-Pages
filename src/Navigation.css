@@ -1,0 +1,82 @@
+/* Navigation.css */
+
+/* Container for desktop navigation */
+.navbar {
+  padding: 10px 20px; /* Adjust padding as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold; /* Make text thicker */
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hamburger menu styles for mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 500px) {
+  .navbar-desktop {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+    background-color: #030303;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20;
+    background-color: #030303;
+    width: 80%;
+    box-shadow: 0 2px 5px rgb(252, 252, 252);
+  }
+
+  .menu.active button {
+    margin: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+
+  .navbar.mobile {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+}
+
+/* Dark mode styles */
+.dark-mode .menu button {
+  color: #f9f9f9; /* Light text color in dark mode */
+  background-color: transparent;
+}
+
+.dark-mode .bar {
+  background-color: #f1efef; /* Light color for mobile menu icon in dark mode */
+}
